@@ -29,9 +29,5 @@ app.use(bodyParser.json());
 
 //ROOT ROUTE
 app.get('/', function(req, res) {
-  var data = {
-    row: ['0','1','2','3'],
-    col: ['0','1','2','3']
-  }
-  res.render('home', data);
+  res.render('home');
 });
